@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap')
+@import 'var'
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+.body
+    background-color: $paleBlue
+    background-image: url('../images/pattern-background-mobile.svg')
+    background-repeat: no-repeat
+    background-size: 100% 30%
+    background-position: top center
+    font-family: $fontFamily
+    font-size: $fontSize
+    height: 100%
+    @media screen and (min-width: 700px)
+        background-image: url('../images/pattern-background-desktop.svg')
+        background-size: 100% 40%
+
+    .wrapper
+        width: 330px
+        margin: 3rem auto
+        border-radius: $borderRadiusM
+        background-color: #fff
+        @media screen and (min-width: 700px)
+            width: 450px
+        &--desc
+            padding: 1.5rem 1.8rem .5rem 2rem
+            @media screen and (min-width: 700px)
+                padding: 1.5rem 2.5rem .5rem 2rem
+        //Header Image
+        .header
+            &--image
+                width: 100%
+                border-radius: $borderRadiusM $borderRadiusM 0 0
+
+        //Header Description
+        .order_description
+            text-align: center
+            margin-bottom: 1.5rem
+            &--header
+                font-size: 1.2rem
+                font-weight: 900
+                margin-bottom: 1rem
+            &--main
+                padding: 0 .8rem
+                font-size: .9rem
+                line-height: 1.4rem
+                color: $desaturatedBlue
+                @media screen and (min-width: 700px)
+                    padding: 0 2rem
+        .order_plan
+            position: relative
+            background-color: $veryPaleBlue
+            border-radius: $borderRadiusSm
+            display: flex
+            justify-content: space-between
+            align-items: center
+            padding: 1rem .8rem
+            font-weight: 700
+            line-height: 1.5rem
+            margin-bottom: 1.5rem
+            @media screen and (min-width: 700px)
+                padding: 1.4rem 1.4rem
+                justify-content: flex-start
+            &--text
+                @media screen and (min-width: 700px)
+                    margin-left: 1rem
+            &--sub-header
+                color: $desaturatedBlue
+                font-size: .8rem
+            &--button
+                color: $brightBlue
+                margin-left: 1.5rem
+                font-size: .8rem
+                &:hover
+                    text-decoration: none
+                    color: $paleBlue
+                @media screen and (min-width: 700px)
+                    position: absolute
+                    right: 1.4rem
+        .order_footer
+            display: flex
+            flex-direction: column
+            text-align: center
+
+            &--payment-btn
+                border-radius: $borderRadiusSm
+                background-color: $brightBlue
+                color: #fff
+                cursor: pointer
+                text-decoration: none
+                padding: .8rem 0
+                box-shadow: 0 .8rem .8rem $paleBlue
+                font-weight: 700
+                &:hover
+                    background-color: $desaturatedBlue
+            &--cancel-btn
+                color: $desaturatedBlue
+                text-decoration: none
+                padding: 1.5rem 0
+                font-weight: 900
+                &:hover
+                    color: $darkBlue

@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.body {
+  background-color: #e0e8ff;
+  background-image: url("../images/pattern-background-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 30%;
+  background-position: top center;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  height: 100%;
+}
+
+@media screen and (min-width: 700px) {
+  .body {
+    background-image: url("../images/pattern-background-desktop.svg");
+    background-size: 100% 40%;
+  }
+}
+
+.body .wrapper {
+  width: 330px;
+  margin: 3rem auto;
+  border-radius: 1rem;
+  background-color: #fff;
+}
+
+@media screen and (min-width: 700px) {
+  .body .wrapper {
+    width: 450px;
+  }
+}
+
+.body .wrapper--desc {
+  padding: 1.5rem 1.8rem .5rem 2rem;
+}
+
+@media screen and (min-width: 700px) {
+  .body .wrapper--desc {
+    padding: 1.5rem 2.5rem .5rem 2rem;
+  }
+}
+
+.body .wrapper .header--image {
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.body .wrapper .order_description {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.body .wrapper .order_description--header {
+  font-size: 1.2rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+
+.body .wrapper .order_description--main {
+  padding: 0 .8rem;
+  font-size: .9rem;
+  line-height: 1.4rem;
+  color: #7280a7;
+}
+
+@media screen and (min-width: 700px) {
+  .body .wrapper .order_description--main {
+    padding: 0 2rem;
+  }
+}
+
+.body .wrapper .order_plan {
+  position: relative;
+  background-color: #f5f7ff;
+  border-radius: 0.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem .8rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+@media screen and (min-width: 700px) {
+  .body .wrapper .order_plan {
+    padding: 1.4rem 1.4rem;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .body .wrapper .order_plan--text {
+    margin-left: 1rem;
+  }
+}
+
+.body .wrapper .order_plan--sub-header {
+  color: #7280a7;
+  font-size: .8rem;
+}
+
+.body .wrapper .order_plan--button {
+  color: #3829e0;
+  margin-left: 1.5rem;
+  font-size: .8rem;
+}
+
+.body .wrapper .order_plan--button:hover {
+  text-decoration: none;
+  color: #e0e8ff;
+}
+
+@media screen and (min-width: 700px) {
+  .body .wrapper .order_plan--button {
+    position: absolute;
+    right: 1.4rem;
+  }
+}
+
+.body .wrapper .order_footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.body .wrapper .order_footer--payment-btn {
+  border-radius: 0.8rem;
+  background-color: #3829e0;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  padding: .8rem 0;
+  -webkit-box-shadow: 0 0.8rem 0.8rem #e0e8ff;
+          box-shadow: 0 0.8rem 0.8rem #e0e8ff;
+  font-weight: 700;
+}
+
+.body .wrapper .order_footer--payment-btn:hover {
+  background-color: #7280a7;
+}
+
+.body .wrapper .order_footer--cancel-btn {
+  color: #7280a7;
+  text-decoration: none;
+  padding: 1.5rem 0;
+  font-weight: 900;
+}
+
+.body .wrapper .order_footer--cancel-btn:hover {
+  color: #1f2f56;
+}
+/*# sourceMappingURL=main.css.map */
