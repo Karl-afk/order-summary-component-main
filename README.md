@@ -22,8 +22,8 @@ Users should be able to:
 
 ### Screenshot
 
-![screenshot-desktop](../../screenshot-desktop.png)
-![screenshot-mobile](../../screenshot-mobile.png)
+![screenshot-desktop](.screenshot-desktop.png)
+![screenshot-mobile](./screenshot-mobile.png)
 
 ### Links
 
